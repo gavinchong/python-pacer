@@ -13,7 +13,7 @@ class Score(models.Model):
     created_at = models.DateTimeField(
         auto_now_add=True
     )
-    created_by = models.IntegerField(null=True)
+    # created_by = models.IntegerField(null=True)
     
     @property
     def username(self):
