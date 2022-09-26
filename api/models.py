@@ -6,7 +6,7 @@ class Score(models.Model):
         db_table = 'score'
     
     point = models.IntegerField()
-    user_id = models.ForeignKey(
+    user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
     )
@@ -17,6 +17,4 @@ class Score(models.Model):
     
     @property
     def username(self):
-        return self.user_id.username
-    
-    
+        return self.user.username
