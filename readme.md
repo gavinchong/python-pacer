@@ -49,14 +49,29 @@ http://127.0.0.1:8000/admin
 
 ## Task 3
 
+
+```python
+class Score(models.Model):
+    class Meta:
+        db_table = 'score'
+    
+    point = models.IntegerField()
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+    )
+    created_at = models.DateTimeField(
+        auto_now_add=True
+    )
+    created_by = models.IntegerField(null=True) <-- add new field
+```
+
+
 Running command below to create migration file
 --------------------------
 
 ```
 $ python manage.py makemigrations
-Migrations for 'api':
-  api/migrations/0001_initial.py
-    - Create model Score
 ```
 
 Running command below to run migration files
