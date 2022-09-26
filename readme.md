@@ -4,6 +4,7 @@
 <code>GET</code> http://127.0.0.1:8000/api/get_score
 
 The following is a Task 1 Simple JSON result:
+
 **Header**
 
 	Accept: application/json
