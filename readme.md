@@ -45,6 +45,8 @@ $ python manage.py test
 ## Task 2
 http://127.0.0.1:8000/admin
 
+![alt text](https://github.com/gavinchong/python-pacer/blob/main/Screenshot%202022-09-26%20at%202.49.42%20PM.png)
+
 ## Task 3
 
 Running command below to create migration file
