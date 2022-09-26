@@ -11,6 +11,7 @@ The following is a Task 1 Simple JSON result:
 	Content-Type: application/json
 	Authorization: Token {token}
 
+**Success**
 ```JSON
 {
     "status": "success",
@@ -20,6 +21,15 @@ The following is a Task 1 Simple JSON result:
         "created_at": "2022-09-21T00:00:00Z",
         "user": 1
     }
+}
+```
+
+**Failed**
+```JSON
+{
+    "status": "success",
+    "result": {},
+    "message": "No record found"
 }
 ```
 
