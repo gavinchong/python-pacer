@@ -25,6 +25,9 @@ Running testcase command
 $ python manage.py test
 ```
 
+## Task 2
+http://127.0.0.1:8000/admin
+
 ## Task 3
 
 Running command below to create migration file
