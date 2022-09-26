@@ -65,3 +65,14 @@ Running command below to run migration files
 ```
 $ python manage.py migrate
 ```
+
+## Additional Task
+
+### Auth Token
+
+Running command below to create token
+--------------------------
+
+```
+$ python manage.py drf_create_token [username]
+```
